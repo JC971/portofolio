@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+header img {
+    width: 70px;
+    /* adjust this value as needed */
+    margin-right: 0px;
+    font-weight: 800;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: rgb(182, 223, 16);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.teampic {
+    color: #333;
+    width: 380px;
+    text-decoration: none;
+
+}
+
+.hero-section {
+    background-image: url("hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-section h2 {
+    margin: 0;
+}
+
+.services {
+    padding: 40px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+}
+
+.services ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services li {
+    width: 30%;
+    text-align: center;
+}
+
+.services img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    padding: 40px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 40px;
+}
+
+.portfolio ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.portfolio li {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    background-color: #f7f7f7;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+}
+
+.testimonials ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials li {
+    margin-bottom: 40px;
+}
+
+.contact-us {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    margin-bottom: 40px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-us input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us input[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
