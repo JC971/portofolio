@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullhaura</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="img/logo.png" alt="Web Agency Logo">
+        <nav>
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header> 
+    
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <h1>Welcome to Fullhaura</h1>
+        <p>We create modern, responsive websites that deliver results for your company</p>
+        <p>Fullhaura is a freelance web agency specialized in graphic design and visual identity.
+            Your requests are in the center of our attention and they receive a thorough treatment by our experts in the
+            corresponding field</p>
+        <a href="#contact-us" class="cta-button">Get started</a>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-us" id="about-us">
+        <h2>About Us</h2>
+        <p>We are a team of web development experts dedicated to delivering high-quality websites for our clients. Our
+            mission is to help businesses succeed online and reach their goals.</p>
+        <h3>Meet our team</h3>
+        <style>
+            #scrollable-container {
+                overflow-x: scroll;
+                white-space: nowrap;
+                height: 200px;
+            }
+        </style>
+
+        <div id="scrollable-container">
+            <img src="img/Tristan.png" alt="Image 1">
+            <img src="img/Tristan.png" alt="Image 2">
+            <img src="img/Tristan.png" alt="Image 3">
+            <img src="img/Tristan.png" alt="Image 4">
+            <img src="img/Tristan.png" alt="Image 5">
+            <img src="img/Tristan.png" alt="Image 6">
+            <!-- More images here -->
+        </div>
+
+        <script>
+            // Get the container element
+            var container = document.getElementById("scrollable-container");
+
+            // Get all the images inside the container
+            var images = container.getElementsByTagName("img");
+
+            // Calculate the total width of the images
+            var totalWidth = 0;
+            for (var i = 0; i < images.length; i++) {
+                totalWidth += images[i].offsetWidth;
+            }
+
+            // Set the width of the container based on the total width of the images
+            container.style.width = totalWidth + "px";
+        </script>
+        <ul>
+            <li>
+                <h4>Grech Tristan</h4>
+                <p>Web Developer / Design UX UI</p>
+            </li>
+            <li>
+                <h4>Martel Clement/h4>
+                    <p>UX Designer</p>
+            </li>
+            <li>
+                <h4>Davis</h4>
+                <p>Company & website audit</p>
+            </li>
+        </ul>
+        <h3>Our values</h3>
+        <ul>
+            <li>Quality</li>
+            <li>Integrity</li>
+            <li>Customer satisfaction</li>
+        </ul>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>
+                <h3>Website Design</h3>
+                <p>We create beautiful, functional websites that make a lasting impression on your audience.</p>
+            </li>
+            <li>
+                <h3>E-commerce Development</h3>
+                <p>Our team can help you build an online store that is easy to use and drives sales for your business.
+                </p>
+            </li>
+            <li>
+                <h3>Custom Web Applications</h3>
+                <p>We develop custom web applications tailored to your specific business needs and goals.</p>
+            </li>
+        </ul>
+        <section class="portfolio" id="portfolio">
+            <h2>Our Portfolio</h2>
+            <ul>
+                <li>
+                    <h3>Brother Motors</h3>
+                    <a href="https://www.brothersmotors.fr/">
+                        <img src="img/logo-BM.png" alt="Logo">
+                    </a>
+                    <p>A brief description of Example Project 1 and its features.</p>
+                </li>
+                <li>
+                    <h3>Monaco Premium</h3>
+                    <a href="https://monaco-premium.com/">
+                        <img src="img/logo-MC.png" alt="logo">
+                    </a>
+                    <p>YOUR LUXURY CONCIERGE ON THE FRENCH RIVIERA AND AROUND THE WORLD</p>
+                </li>
+                <li>
+                    <h3>Woodzbar</h3>
+                    <a href="https://www.woodzbar.com/">
+                        <img src="img/cover-woodz.png" alt="logo">
+                    </a>
+                    <p>YOUR LUXURY CONCIERGE ON THE FRENCH RIVIERA AND AROUND THE WORLD</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="testimonials">
+            <h2>What our clients are saying</h2>
+            <ul>
+                <li>
+                    <h3>Client 1</h3>
+                    <p>"The team at Web Agency delivered a top-notch website that exceeded all of our expectations. We
+                        are so happy with the results!"</p>
+                </li>
+                <li>
+                    <h3>Client 2</h3>
+                    <p>"The process was smooth and seamless from start to finish. We highly recommend Web Agency for all
+                        your web development needs."</p>
+                </li>
+                <li>
+                    <h3>Client 3</h3>
+                    <p>"The website looks amazing and has helped our business grow. Thank you Web Agency for all your
+                        hard work!"</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Us -->
+        <section class="contact-us" id="contact-us">
+            <h2>Get in touch</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Copyright © 2023 Fullhaura Web Agency</p>
+        </footer>
+</body>
+</html>

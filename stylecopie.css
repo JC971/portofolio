@@ -2,76 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 10px;
-    background-color: #e1ebeb9c;
 }
-/*-----------modifs---------------*/
- body a{
-    text-decoration: none;
- }
- body ul{
-    list-style: none;
- }
-
-h3{
-    font-size: 24px;
-}
-
- .team{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
-    margin: 50px 0;
-    
-}
-
-.team ul{
-    padding: 50px;
-}
-
-
-.team ul li{
-    line-height: 30px;
-}
-
- .container{
-    margin: 20px;
- }
-
-
- .team img{
-    width: 20%;
-    object-fit: cover;
-   
- }
-
- .value{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	align-items: baseline;
-	align-content: stretch;
-}
-
-.value p{
-    color: grey;
-}
-    
-    
-
-	
-
-
-
-
-
-
-
- /*---------------------------*/
-
 
 header {
     display: flex;
