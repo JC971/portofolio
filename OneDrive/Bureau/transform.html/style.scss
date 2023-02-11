@@ -1,0 +1,97 @@
+body{
+  margin: 10px;
+  padding: 10px;
+}
+
+$cd-txt: #6300a0;
+$cd-box: #fff;
+
+.container {
+  background-color: rgb(237, 246, 247);
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form {
+ 
+
+  &__group {
+      & input {
+      border: 2px solid $cd-box;
+      border-radius: 100rem;
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      outline: none;
+      padding:  1.5rem;
+      width: 90%;
+      text-align: center;
+      
+      &:focus {
+          border: 5px solid rgb(207, 190, 190);
+          
+          }
+          &:not(:focus):invalid{
+            background-color: red;
+            transform: scale(1.15);
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 10;
+            
+          }
+      }
+  }
+}
+
+$shakeintensity: 2%;
+
+@keyframes headshake{
+  25%{
+    transform: translateX($shakeintensity);
+  }
+  75%{
+    transform: translateX($shakeintensity *-1);
+  }
+}
+$cd-bars: #15DEA5;
+$size: 3vh;
+$num-bars: 5
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $num-bars;
+
+.load {
+    width: $size*10;
+    height: $size*7.5;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar {
+        background-color: $cd-bars;
+        height: 100%;
+        width: $size;
+        animation: bars $anim-dur;
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+             }
+        }
+    }
+}
+
+@keyframes bars {
+  0% {
+      transform: scaleY(0.5);
+      
+  }
+  100% {
+      transform: scaleY(1.0);
+  }
+}
+
+@keyframes bars {
+  0% {
+      transform: scaleY(0.5);
+      
+  }
+  100% {
+      transform: scaleY(1.0);
+  }
+}
