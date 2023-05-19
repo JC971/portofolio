@@ -16,9 +16,19 @@ links.forEach(link => {
     // Construire la nouvelle URL avec l'ID du photographe en tant que paramètre de requête
     const newUrl = `https://Front-End-Fisheye\photographer.html?id=${photographerIdent}`;
 
+    const photographerElement = document.getElementById(photographerIdent);
 
+
+  
   });
- 
+  console.log(links[5]);
   });
+
+
+function mediaFactory(data) {
+  const { id, photographerId, title, image, likes, date, price } = data;
   
 
+
+  }
+  
