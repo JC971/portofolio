@@ -1,4 +1,21 @@
 
+function photographerFactory(data) {
+  const { name, portrait, city, country, tagline, price, id } = data;
+
+  const picture = `assets/photographers/${portrait}`;
+
+  function getUserCardDOM() {
+    
+  
+    
+  }
+
+  return { name, picture, city, country, price, id, getUserCardDOM };
+
+};
+
+
+
 
 // Récupérer tous les liens 
 const links = document.querySelectorAll('a');
@@ -15,20 +32,61 @@ links.forEach(link => {
 
     // Construire la nouvelle URL avec l'ID du photographe en tant que paramètre de requête
     const newUrl = `https://Front-End-Fisheye\photographer.html?id=${photographerIdent}`;
-
-    const photographerElement = document.getElementById(photographerIdent);
-
-
-  
-  });
-  console.log(links[5]);
+   
+    window.location.href = newUrl;
   });
 
+ 
+});
 
-function mediaFactory(data) {
-  const { id, photographerId, title, image, likes, date, price } = data;
+const url = window.location.href;
+console.log('url de la page est', url);
+let arr = url.split("=")[1];
+
+
+
+//
+
+
+
+
+fetch('data/photographers.json')
+  .then(response => response.json())
+  .then(data => {
+    const photographers = data['photographers'];
+
+    for (let i = 0; i < photographers.length; i++) {
+      const photographerData = photographers[i];
+      
+      let nom = document.getElementById('nom');
+      nom.innerHTML = photographerData.name;
+      
+ 
+      
+    }
+  });
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
   
 
 
-  }
+
   
+
+
+
+    
+
+

@@ -13,6 +13,9 @@
     </header>
     <main id="main">
       <div class="photograph-header">
+        <div class="nom"id=nom ></div>
+        <div class="portrait" id="portrait" ></div>
+
         <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
       </div>
     </main>
@@ -44,21 +47,10 @@
     </form>
   </div>
 </div>
-    
-   <script>
 
-    const url= window.location.href;
-    console.log('url de la page= ',url); 
-    let arr= url.split("=")[1];
-    console.log(arr);
-
-    
-    
-
-
-   </script>  
-    <script src="/scripts/pages/photographer.js"></script>
-    <script src="/scripts/utils/contactForm.js"></script>
+   
    <script src="scripts/utils/contactForm.js"></script>
+   <script src="scripts/pages/photographer.js"></script>
+  
   </body>
 </html>

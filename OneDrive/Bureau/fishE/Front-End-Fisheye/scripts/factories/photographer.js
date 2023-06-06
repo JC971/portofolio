@@ -6,7 +6,8 @@ function photographerFactory(data) {
     const picture = `assets/photographers/${portrait}`;
   
     function getUserCardDOM() {
-      const article = document.createElement('article');
+        const article = document.createElement('article');
+        
   
       // Création de l'élément <a> avec l'ancre
       const a = document.createElement('a');
@@ -37,15 +38,14 @@ function photographerFactory(data) {
       article.setAttribute('id', id)
       article.appendChild(h4);
       
-      
-      
+    
       
         
       return article;
     }
   
     return { name, picture, city, country, price, id, getUserCardDOM };
-   
+  
 };
 
 
@@ -64,4 +64,4 @@ fetch('data/photographers.json')
 
 
 
-    
+
