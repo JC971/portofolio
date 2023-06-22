@@ -9,21 +9,9 @@ body{
     margin-left: auto;
 }
 
-ul li{
-    
-    list-style: none;
-    font-style: bold;
-    font-size: 1.3rem;
-    padding: 20px;
-    letter-spacing: 2px;
+html{
+    scroll-behavior: smooth;
 }
-
-ul li a{
-    text-decoration: none;
-    color:rgba(0, 0, 0, 0.833);
-    font-weight: 500;
-}
-
 .titre-marques{
 	display: flex;
 	flex-direction: row;
@@ -40,6 +28,23 @@ ul{
 	justify-content: space-evenly;
 	align-items: flex-start;
 	align-content: stretch;
+}
+
+
+ul li{
+    
+    list-style: none;
+    font-style: bold;
+    font-size: 1.3rem;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.833);
+    font-weight: 500;
 }
 
 .bandeau{
@@ -76,19 +81,42 @@ ul{
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-	align-items: flex-start;
+	align-items: stretch;
 	align-content: stretch;
-    
 }
+
+.images-accueil :first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.images-accueil :last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.titre{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.035);
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+}
+
 .images-accueil img{
-    width: 22%;
-    
+    width: 95%;
+    border: 4px white solid;
     border-radius: 20px;
+    margin: 10px; 
 }
+
 
 .image-boutique{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .image-boutique img{
@@ -104,7 +132,7 @@ ul{
 .footer{
     background-color:rgba(0, 0, 0, 0.833);
     font-size: 1.2rem;
-    width: 100%;
+   max-width: 1600px;
     color: #F5F5F5;
     display: flex;
     flex-direction: row;
@@ -115,6 +143,10 @@ ul{
     padding: 20px;
     margin-top: 30px;
     font-size: 1.3rem;
+}
+
+.footer-marque{
+    letter-spacing: 2px;
 }
 
 .footer-marque{
